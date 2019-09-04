@@ -1,0 +1,11 @@
+<h1>Login</h1>
+<hr>
+
+<div class="row justify-content-center">
+  <div class="col-8">
+    <form #ngNativeValidate (ngSubmit)="ingresar()" class="p-4 form-group">
+      <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre de Usuario" autofocus min="3">
+      <button type="submit" [disabled]="nombre.trim().length === 0" class="form-control btn btn-success mt-3">Ingresar</button>
+    </form>
+  </div>
+</div>
